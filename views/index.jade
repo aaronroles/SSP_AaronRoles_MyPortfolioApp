@@ -1,5 +1,39 @@
-extends layout
-
-block content
-  h1 Aaron's Portfolio
-  p Welcome
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='stylesheets/styles.css')
+  body
+    block content
+    nav#nav
+        a(class='navLogo', href='/index')
+            img#logo(src='images/logo_01.png')
+        a(class='navItem', id='linkedin', href='https://www.linkedin.com/in/aaronroles', target='_blank') LinkedIn
+        a(class='navItem', id='twitter', href='https://www.twitter.com/wtcchhh', target='_blank') Twitter
+        a(class='navItem', id='googleplus', href='https://plus.google.com/u/112660620718159685402', target='_blank') GooglePlus
+        a(class='navItem', id='soundcloud', href='https://soundcloud.com/aaron-roles', target='_blank') SoundCloud
+        
+    div#container
+        div.panel#aboutme
+            h3 About Me
+            div.description Hello! I'm Aaron Roles and this is my portfolio. I am a third year Creative Multimedia student. <b><br><br> Tel: 0876611616 <br> Email: aaron_roles93@hotmail.com<b>
+            
+        a(href='/webdev')
+            div.panel#webdev 
+                h3.module Web Development
+                
+        a(href='/programming')
+            div.panel#prog 
+                h3.module Programming
+                
+        a(href='/audiovideo')
+            div.panel#av 
+                h3.module Audio &amp; Video
+                
+        a(href='/animation')
+            div.panel#anim 
+                h3.module Animation
+                
+        a(href='/viscom')
+            div.panel#viscom 
+                h3.module Vis Com

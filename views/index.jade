@@ -12,8 +12,27 @@ html
     div#container
         div.panel#aboutme
             h3 Aaron Roles
-            div.description Third Year Creative Multimedia<br><br> Server Side Programming - Portfolio App <b><br><br> Tel: 0876611616 <br> Email: aaron_roles93@hotmail.com<b>
-                
+            div.description 
+                | Third Year Creative Multimedia <br> Server Side Programming - Portfolio App 
+                | <br><br><b> 
+                | Tel: 0876611616 
+                | <br> 
+                | Email: aaron_roles93@hotmail.com
+                | <br><br></b> 
+                h5 Upload
+                form(name="Upload File", action="/upload", method="post", id="uploadForm")
+                    label(for="user") Username &nbsp;
+                    input(type="text", name="user", placeholder="Username...", class="loginPage")
+                    br 
+                    label(for="pass") Password &nbsp;
+                    input(type="password", name="pass", placeholder="Password...", class="loginPage")
+                    br
+                    label(for="category") Choose Category &nbsp;
+                    select(name="category" required) 
+                        option(value="flash") Flash
+                        option(value="audio") Audio
+                        option(value="video") Video
+                        option(value="image") Image
         a(href='/flash')
             div.panel#prog 
                 h3.module Flash

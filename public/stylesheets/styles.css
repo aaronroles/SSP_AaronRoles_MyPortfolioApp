@@ -48,7 +48,6 @@ a
 h3
 {
 	font-size: 2.8vw;
-	margin-top: 1%;
 	margin-bottom: 3%;
 }
 
@@ -75,43 +74,16 @@ h3
 	cursor:pointer;
 }
 
-#twitter:hover
-{
-	color: #ffffff;
-	background-color: #55acee;
-	cursor: pointer;
-}
-
-#soundcloud:hover
-{
-	background-color: #ff3300;
-	color: #fff;
-	cursor: pointer;
-}
-
-#linkedin:hover
-{
-	background-color: #0077b5;
-	color: #fff;
-	cursor:pointer;	
-}
-
-#googleplus:hover
-{
-	background-color: #DC4E41;
-	color: #fff;
-	cursor: pointer;
-}
-
 #container
 {
 	margin-left: 6%;
 }
 
-#description
+.description
 {
 	margin: 1%;
 	margin-top: 8%;	
+	padding: 1%;
 	font-size: 1.2vw;
 }
 
@@ -119,9 +91,8 @@ h3
 {
 	width: 29%;
 	margin-left: 1%;
-	margin-bottom: 1%;
 	margin-top: 4%;
-	height: 215px;
+	height: 224px;
 	display: block;	
 	float: left;
 	text-align:center;
@@ -130,66 +101,34 @@ h3
 
 #aboutme
 {
-	color: #fff;
-	background-color: #000; 
+	color: #000;
+	background-color: #fff; 
+	height: 500px;
 }
 
-#webdev
+#flash
 {
-	background-image:url(/images/thumbnails/t_webdev/P_T_W_Image.JPG);
-	filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    filter: gray;
-    -webkit-transition: all .2s ease;
 	color:#000;
 }
 
-#prog
+#audio
 {
-	background-image:url(/images/thumbnails/t_prog/P_T_P_halloween.JPG);
-	filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    filter: gray;
-    -webkit-transition: all .2s ease;
 	color:#000;
 }
 
-#av
+#videos
 {
-	background-image:url(/images/thumbnails/t_av/P_T_AV_kinetic.JPG);
-	filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    filter: gray;
-    -webkit-transition: all .2s ease;
 	color:#000;
 }
 
-#anim
+#images
 {
-	background-image:url(/images/thumbnails/t_anim/P_T_A_animatic.JPG);
-	filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    filter: gray;
-    -webkit-transition: all .2s ease;
-	color:#000;
-}
-
-#viscom
-{
-	background-image:url(/images/thumbnails/t_viscom/P_T_V_movie.JPG);
-	filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    filter: gray;
-    -webkit-transition: all .2s ease;
 	color:#000;	
 }
 
-#prog:hover, #anim:hover, #webdev:hover, #av:hover, #viscom:hover
+#flash:hover, #videos:hover, #audio:hover, #images:hover
 {
-	filter: grayscale(10%);
-    -webkit-filter: grayscale(10%);
-    filter: none;
-	cursor: pointer;
+	background-color: grey;
 }
 
 .module

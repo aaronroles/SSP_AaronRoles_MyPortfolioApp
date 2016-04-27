@@ -135,14 +135,9 @@ h3
 	color:#000;
 }
 
-#images
+#img
 {
 	color:#000;	
-}
-
-#flash:hover, #videos:hover, #audio:hover, #images:hover
-{
-	background-color: grey;
 }
 
 .module

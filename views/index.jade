@@ -20,7 +20,7 @@ html
                 | Email: aaron_roles93@hotmail.com
                 | <br><br></b> 
                 h5 Upload A File
-                form(name="Upload File", action="/upload", method="post", id="uploadForm")
+                form(name="Upload File", action="/upload", method="post", id="uploadForm", enctype='multipart/form-data')
                     label(for="user") Username &nbsp;
                     input(type="text", name="user", placeholder="Username...", class="loginPage" required)
                     br 
@@ -28,17 +28,18 @@ html
                     input(type="password", name="pass", placeholder="Password...", class="loginPage" required)
                     br
                     label(for="category") Choose Category &nbsp;
-                    select(name="category" required) 
-                        option(value="flash") Flash
-                        option(value="audio") Audio
-                        option(value="video") Video
-                        option(value="image") Image
+                    select(name="category", id="category" required) 
+                        option(value="Flash") Flash
+                        option(value="Audio") Audio
+                        option(value="Video") Video
+                        option(value="Image") Image
                     br
                     label(for="theFile")
                     input(type="file", name="theFile" required)
                     br
                     label(for="submit")
                     input(type="submit", name="submit", value="Upload")
+                    
         a(href='/flash')
             div.panel#prog 
                 h3.module Flash
@@ -51,6 +52,6 @@ html
             div.panel#anim 
                 h3.module Videos
                 
-        a(href='/images')
-            div.panel#viscom 
+        a(href='/image')
+            div.panel#img
                 h3.module Images

@@ -13,8 +13,7 @@ var multer = require('multer');
 
 var storageMethod = multer.diskStorage({
     destination: function (req, file, cb) {
-        console.log("In destination");
-        
+        //console.log("In destination");
         fs.exists('./uploads/', function(exists){
             if(!exists){
                 fs.mkdir('./uploads/', function(error){

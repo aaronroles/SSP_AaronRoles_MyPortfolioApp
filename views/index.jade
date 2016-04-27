@@ -19,13 +19,13 @@ html
                 | <br> 
                 | Email: aaron_roles93@hotmail.com
                 | <br><br></b> 
-                h5 Upload
+                h5 Upload A File
                 form(name="Upload File", action="/upload", method="post", id="uploadForm")
                     label(for="user") Username &nbsp;
-                    input(type="text", name="user", placeholder="Username...", class="loginPage")
+                    input(type="text", name="user", placeholder="Username...", class="loginPage" required)
                     br 
                     label(for="pass") Password &nbsp;
-                    input(type="password", name="pass", placeholder="Password...", class="loginPage")
+                    input(type="password", name="pass", placeholder="Password...", class="loginPage" required)
                     br
                     label(for="category") Choose Category &nbsp;
                     select(name="category" required) 
@@ -33,6 +33,12 @@ html
                         option(value="audio") Audio
                         option(value="video") Video
                         option(value="image") Image
+                    br
+                    label(for="theFile")
+                    input(type="file", name="theFile" required)
+                    br
+                    label(for="submit")
+                    input(type="submit", name="submit", value="Upload")
         a(href='/flash')
             div.panel#prog 
                 h3.module Flash

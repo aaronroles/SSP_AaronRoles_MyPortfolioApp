@@ -1,6 +1,20 @@
 @charset "utf-8";
 /* CSS Document */
 
+#uploadForm
+{
+	text-align: center;
+	width: 100%;
+}
+
+select, input
+{
+	margin-bottom: 1%;
+	width: 33%;
+}
+
+/* */
+
 @font-face
 {
 	font-family: DroidSans;

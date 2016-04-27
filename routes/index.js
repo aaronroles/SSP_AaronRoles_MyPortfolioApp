@@ -49,12 +49,14 @@ router.get('/image', function(req, res, next) {
 
 /* file upload */
 router.post('/upload', function(req, res, next){
-   var choice = req.body.category;
-   console.log("Choice: " + choice);
    var file = {}; 
+   
    file.name = req.files[0].filename;
    file.id = fileId++;
+   file.type = req.body.category;
+   
    files.push(file);
+   
    console.log(file);
    console.log(files);
    

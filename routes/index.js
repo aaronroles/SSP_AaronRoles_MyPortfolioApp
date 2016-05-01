@@ -44,7 +44,7 @@ router.get('/videos', function(req, res, next) {
 
 router.get('/image', function(req, res, next) {
   //console.log("IMAGES");
-  res.render('content', {title: "Images"});
+  res.render('content', {files: files, title: "Images"});
 });
 
 /* file upload */

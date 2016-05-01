@@ -1,0 +1,3 @@
+.\database filter=lfs diff=lfs merge=lfs -text
+.\database\journal filter=lfs diff=lfs merge=lfs -text
+.\database\journal\WiredTigerLog.0000000004 filter=lfs diff=lfs merge=lfs -text
